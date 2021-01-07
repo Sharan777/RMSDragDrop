@@ -1,3 +1,13 @@
 p {
   font-family: Lato;
 }
+
+div.test{
+  border: 2px solid;
+  padding: 20px; 
+  width: 300px;
+  resize: both;
+  overflow: auto;
+  margin:15px;
+  display: inline-block;
+}

@@ -1,4 +1,17 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<div cdkDropList (cdkDropListDropped)="onDrop($event)">
+  <div
+    (resized)="onResized($event)"
+    class="test"
+    *ngFor="let group of groups"
+    cdkDrag
+  >
+    <p>{{group}}</p>
+    <i class="material-icons" cdkDragHandle>open_with</i>
+    <p>
+      Let the user resize both the height and the width of this div element.
+    </p>
+    <p>
+      To resize: Click and drag the bottom right corner of this div element.
+    </p>
+  </div>
+</div>
